@@ -1,0 +1,16 @@
+
+program: w1d4_part2_solution.py
+method: random
+metric:
+  name: test_accuracy
+  goal: maximize
+parameters:
+  batch_size:
+    distribution: q_log_uniform_values
+    q: 8
+    min: 32
+    max: 1024
+  lr:
+    distribution: log_uniform_values
+    min: 0.0001
+    max: 0.1
